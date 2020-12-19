@@ -87,22 +87,22 @@ class CreateEmployeeComponent extends Component {
                                 <form>
                                     <div className="form-group">
                                         <label> First Name: </label>
-                                        <input placeholder="First Name" name="firstName" className="form-control" 
+                                        <input id='firstname' placeholder="First Name" name="firstName" className="form-control" 
                                         value={this.state.firstName} onChange={this.changeFirstNameHandler}/>
                                     </div>
                                     <div className="form-group">
                                         <label> Last Name: </label>
-                                        <input placeholder="Last Name" name="lastName" className="form-control" 
+                                        <input id='lastname' placeholder="Last Name" name="lastName" className="form-control" 
                                         value={this.state.lastName} onChange={this.changeLastNameHandler}/>
                                     </div>
                                     <div className="form-group">
                                         <label> Email: </label>
-                                        <input placeholder="Email" name="emailId" className="form-control" 
+                                        <input id='email' placeholder="Email" name="emailId" className="form-control" 
                                         value={this.state.emailId} onChange={this.changeEmailIdHandler}/>
                                     </div>
 
-                                    <button className="btn btn-success" onClick={this.saveOrUpdateEmployee}>Save</button>
-                                    <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
+                                    <button id='saveButton' className="btn btn-success" onClick={this.saveOrUpdateEmployee}>Save</button>
+                                    <button id='cancelButton' className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
 
                                 </form>
                             </div>
