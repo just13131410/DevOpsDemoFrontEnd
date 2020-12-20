@@ -2,10 +2,10 @@
 FROM node:13.12.0-alpine
 
 # set working directory
-WORKDIR /boot-spring-ui
+WORKDIR /ui
 
 # add `/app/node_modules/.bin` to $PATH
-ENV PATH /boot-spring-ui/node_modules/.bin:$PATH
+ENV PATH /ui/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./
